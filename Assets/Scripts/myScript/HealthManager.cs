@@ -6,6 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     
     public int PlayerStartWith = 3;
+    
 
     public int PlayerCurrentHealth;
     public TextMeshProUGUI healthText;
@@ -18,8 +19,6 @@ public class HealthManager : MonoBehaviour
         PlayerCurrentHealth = PlayerStartWith;
         UpdateHealthUI();
         gameOverPanel.SetActive(false);
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -10,6 +10,8 @@ TagManager:
   - ToNextLevel
   - Heart
   - Tranform
+  - LeftBorder
+  - RightBorder
   layers:
   - Default
   - TransparentFX
