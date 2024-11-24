@@ -10,8 +10,8 @@
 
 ----
 ## עזרה שקיבלתי:
- - נעזרתי [במדריך הזה](https://www.youtube.com/watch?v=BLfNP4Sc_iA&t=762s&ab_channel=Brackeys) כדי להוסיף למסך את כמות החיים שנותרו לחללית.
- - [ומפה](https://github.com/Brackeys/Health-Bar/blob/master/Health%20Bar/Assets/Sprites/Heart.png) לקחתי את הציור של הלב. (הגיטהאב של אותו מדריך)
+ - נעזרתי [במדריך הזה]() 
+ - [מפה](https://github.com/Brackeys/Health-Bar/blob/master/Health%20Bar/Assets/Sprites/Heart.png) לקחתי את הציור של הלב.
 
 
   </div>
