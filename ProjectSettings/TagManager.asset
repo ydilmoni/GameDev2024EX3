@@ -8,6 +8,8 @@ TagManager:
   - Laser
   - Wall
   - ToNextLevel
+  - Heart
+  - Tranform
   layers:
   - Default
   - TransparentFX
