@@ -11,7 +11,8 @@ public class TimedSpawnerRandom: MonoBehaviour {
     [Tooltip("Minimum time between consecutive spawns, in seconds")] [SerializeField] float minTimeBetweenSpawns = 0.2f;
     [Tooltip("Maximum time between consecutive spawns, in seconds")] [SerializeField] float maxTimeBetweenSpawns = 1.0f;
     [Tooltip("Maximum distance in X between spawner and spawned objects, in meters")] [SerializeField] float maxXDistance = 1.5f;
-    [Tooltip("Minimum distance in X between spawner and spawned objects, in meters")] [SerializeField] float minXDistance = 0.5f;
+    [Tooltip("Maximum distance in Y between spawner and spawned objects, in meters")] [SerializeField] float maxYDistance = 1.5f;
+
 
     // [SerializeField] Transform parentOfAllInstances;
 
@@ -24,12 +25,14 @@ public class TimedSpawnerRandom: MonoBehaviour {
             float timeBetweenSpawnsInSeconds = UnityEngine.Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
             await Awaitable.WaitForSecondsAsync(timeBetweenSpawnsInSeconds);       // co-routines
             if (!this) break;   // might be destroyed when moving to a new scene
-            float XPos = UnityEngine.Random.Range(minXDistance, maxXDistance);
-            int randomSign = UnityEngine.Random.Range(0, 2) * 2 - 1;
 
+            float XAddToPos = UnityEngine.Random.Range(-maxXDistance, maxXDistance);
+            
+            float YAddToPos = UnityEngine.Random.Range(-maxYDistance, maxYDistance);
+      
             Vector3 positionOfSpawnedObject = new Vector3(
-                transform.position.x + XPos*randomSign,
-                transform.position.y,
+                transform.position.x + XAddToPos,
+                transform.position.y + YAddToPos,
                 transform.position.z);
             GameObject newObject = Instantiate(prefabToSpawn.gameObject, positionOfSpawnedObject, Quaternion.identity);
             newObject.GetComponent<Mover>().SetVelocity(velocityOfSpawnedObject);

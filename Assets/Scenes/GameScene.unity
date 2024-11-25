@@ -505,6 +505,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
+      propertyPath: maxYDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: minYDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
       propertyPath: prefabToSpawn
       value: 
       objectReference: {fileID: 7837289214103786378, guid: 6be821e6b7bcb2f4880f32521dc969c6,
@@ -608,6 +618,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RightSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: maxYDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: minYDistance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -1918,8 +1938,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589358787818447022, guid: 85b31101942032f47a1a942a2d35cea7,
         type: 3}
+      propertyPath: maxYDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589358787818447022, guid: 85b31101942032f47a1a942a2d35cea7,
+        type: 3}
       propertyPath: minXDistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589358787818447022, guid: 85b31101942032f47a1a942a2d35cea7,
+        type: 3}
+      propertyPath: minYDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4589358787818447022, guid: 85b31101942032f47a1a942a2d35cea7,
         type: 3}
@@ -2120,6 +2150,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiddleSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: maxYDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: minYDistance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
