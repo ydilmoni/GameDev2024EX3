@@ -12,6 +12,7 @@ TagManager:
   - Tranform
   - LeftBorder
   - RightBorder
+  - OneShotKillEnemy
   layers:
   - Default
   - TransparentFX

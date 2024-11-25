@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2906520685432555431
+--- !u!1 &5783709601326411033
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6671278469960693534}
-  - component: {fileID: 4589358787818447022}
+  - component: {fileID: 7455419924724576334}
+  - component: {fileID: 501999989648419062}
   m_Layer: 0
-  m_Name: HeartSpawner
+  m_Name: AstroidSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6671278469960693534
+--- !u!4 &7455419924724576334
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2906520685432555431}
+  m_GameObject: {fileID: 5783709601326411033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.4, y: 5.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4589358787818447022
+--- !u!114 &501999989648419062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2906520685432555431}
+  m_GameObject: {fileID: 5783709601326411033}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ab63d9ef6fc24b4792a19faafaad16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 5254080449876007382, guid: 67b68625be1261a49af5c88d6455fa65,
+  prefabToSpawn: {fileID: 1084323748225633348, guid: 59562b4e9129b0d49809546f3de67257,
     type: 3}
-  velocityOfSpawnedObject: {x: 0, y: 0, z: 0}
-  minTimeBetweenSpawns: 5
-  maxTimeBetweenSpawns: 10
-  maxXDistance: 5
+  velocityOfSpawnedObject: {x: 0, y: -2, z: 0}
+  minTimeBetweenSpawns: 1
+  maxTimeBetweenSpawns: 3
+  maxXDistance: 0.5
   maxYDistance: 1.5

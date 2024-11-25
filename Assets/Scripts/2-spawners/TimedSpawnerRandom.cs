@@ -6,7 +6,7 @@ using UnityEngine;
  * This component instantiates a given prefab at random time intervals and random bias from its object position.
  */
 public class TimedSpawnerRandom: MonoBehaviour {
-    [SerializeField] Mover prefabToSpawn;
+    [SerializeField] GameObject prefabToSpawn;
     [SerializeField] Vector3 velocityOfSpawnedObject;
     [Tooltip("Minimum time between consecutive spawns, in seconds")] [SerializeField] float minTimeBetweenSpawns = 0.2f;
     [Tooltip("Maximum time between consecutive spawns, in seconds")] [SerializeField] float maxTimeBetweenSpawns = 1.0f;
@@ -35,7 +35,20 @@ public class TimedSpawnerRandom: MonoBehaviour {
                 transform.position.y + YAddToPos,
                 transform.position.z);
             GameObject newObject = Instantiate(prefabToSpawn.gameObject, positionOfSpawnedObject, Quaternion.identity);
-            newObject.GetComponent<Mover>().SetVelocity(velocityOfSpawnedObject);
+            //הוספתי כאן בדיקה האם יש לאובייקט רכיב של תזוזה או תזוזה רנדומלית
+            if (newObject.TryGetComponent<Mover>(out Mover mover))
+            {
+                mover.SetVelocity(velocityOfSpawnedObject);
+            }
+
+            else if (newObject.TryGetComponent<RandomMover>(out RandomMover randomMover))
+            {
+            }
+
+            else
+            {
+                Debug.LogWarning("The prefab does not contain a Mover or RandomMover component.");
+            }
             // newObject.transform.parent = parentOfAllInstances;
         }
     }

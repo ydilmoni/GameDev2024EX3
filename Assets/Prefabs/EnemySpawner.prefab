@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab63d9ef6fc24b4792a19faafaad16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 7837289214103786378, guid: aea6176f031eaef4a8a2c395ae5f001e,
+  prefabToSpawn: {fileID: 7837289214103786379, guid: 6be821e6b7bcb2f4880f32521dc969c6,
     type: 3}
   velocityOfSpawnedObject: {x: 0, y: -2, z: 0}
-  minTimeBetweenSpawns: 1
-  maxTimeBetweenSpawns: 3
-  maxXDistance: 0.5
-  parentOfAllInstances: {fileID: 8392271928695271261}
+  minTimeBetweenSpawns: 0.1
+  maxTimeBetweenSpawns: 0.6
+  maxXDistance: 9
+  maxYDistance: 0

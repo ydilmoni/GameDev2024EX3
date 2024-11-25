@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 
@@ -12,7 +13,9 @@ public class HealthManager : MonoBehaviour
     public TextMeshProUGUI healthText;
     public GameObject gameOverPanel;
     public string damageTag = "Enemy";
+    public string totalDamageTag = "OneShotKillEnemy";
     public string healthTag = "Heart";
+    [SerializeField] private string sceneName;
 
     void Start()
     {
@@ -33,6 +36,12 @@ public class HealthManager : MonoBehaviour
             AddOne();
             Destroy(collision.gameObject);
         }
+        else if(collision.CompareTag(totalDamageTag))
+        {
+            extermination();
+            Destroy(collision.gameObject);
+
+        }
     }
 
     public void DecreaseHealth (int damage){
@@ -50,8 +59,10 @@ public class HealthManager : MonoBehaviour
         UpdateHealthUI();
     }
     
-
-    
+    public void extermination()
+    {
+        DecreaseHealth(PlayerCurrentHealth);
+    }
 
     public void AddOne (){
         AddHealth(1);
@@ -69,5 +80,12 @@ public class HealthManager : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
         Time.timeScale = 0f;
+    }
+
+    public void RestartGame()
+    {
+        // הטענה מחדש של הסצנה
+        SceneManager.LoadScene(sceneName);
+         Time.timeScale = 1f;
     }
 }
