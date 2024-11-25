@@ -225,8 +225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  minAngle: 200
-  maxAngle: 340
+  minAngle: 220
+  maxAngle: 320
 --- !u!114 &7619160000350424553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +241,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smallerAsteroidPrefab: {fileID: 2889395783903108575, guid: bb57cd452be677a4da22ca0c36f5f908,
     type: 3}
-  numberOfSmallerAsteroids: 6
-  MinExplosionPointYInInPercent: 71.8
-  MaxExplosionPointYInInPercent: 33.6
+  numberOfSmallerAsteroids: 15
+  MinExplosionPointYInInPercent: 88.7
+  MaxExplosionPointYInInPercent: 40.4

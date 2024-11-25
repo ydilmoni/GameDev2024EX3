@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: -8433250894850022944}
   - component: {fileID: -3242596646991089796}
   - component: {fileID: -1184156024153231225}
+  - component: {fileID: -5619041257924546156}
+  - component: {fileID: -4936935163654309740}
   m_Layer: 0
   m_Name: LaserWithScoreAdder
   m_TagString: Laser
@@ -196,3 +198,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggeringTag: Enemy
+--- !u!114 &-5619041257924546156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206225842732292031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b571bdbf83e603449e50749327e251f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: EasyEnemy
+--- !u!114 &-4936935163654309740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206225842732292031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b571bdbf83e603449e50749327e251f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: HardEnemy

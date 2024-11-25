@@ -13,6 +13,10 @@ TagManager:
   - LeftBorder
   - RightBorder
   - OneShotKillEnemy
+  - EasyEnemy
+  - MediumEnemy
+  - HardEnemy
+  - ExtremeEnemy
   layers:
   - Default
   - TransparentFX
