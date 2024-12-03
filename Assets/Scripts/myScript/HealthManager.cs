@@ -30,7 +30,7 @@ public class HealthManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(damageTag)||collision.CompareTag(easyTag)||collision.CompareTag(mediumTag))
+        if (collision.CompareTag(damageTag) || collision.CompareTag(easyTag) || collision.CompareTag(mediumTag))
         {
             DecreaseOne();
             Destroy(collision.gameObject);
@@ -40,11 +40,10 @@ public class HealthManager : MonoBehaviour
             AddOne();
             Destroy(collision.gameObject);
         }
-        else if(collision.CompareTag(totalDamageTag)||collision.CompareTag(extremeTag)||collision.CompareTag(hardTag))
+        else if (collision.CompareTag(totalDamageTag) || collision.CompareTag(extremeTag) || collision.CompareTag(hardTag))
         {
             extermination();
             Destroy(collision.gameObject);
-
         }
     }
 

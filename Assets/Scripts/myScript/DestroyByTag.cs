@@ -9,7 +9,7 @@ public class DestroyByTag : MonoBehaviour
     {
         if (other.CompareTag(triggeringTag))
         {
-            Destroy(other.gameObject); 
+            Destroy(other.gameObject);
         }
     }
 }

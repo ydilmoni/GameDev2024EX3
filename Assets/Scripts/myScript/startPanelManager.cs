@@ -9,13 +9,12 @@ public class startPanelManager : MonoBehaviour
     [SerializeField] private CheckWinning checkWinning; // הסקריפט שבודק את הניקוד
     [SerializeField] private DifficultyManager difficultyManager;
 
-     private void Start()
+    private void Start()
     {
         Time.timeScale = 0;
     }
     public void StartGame()
     {
-        
         if (int.TryParse(targetScoreInputField.text, out int targetScore) && targetScore > 0)
         {
             checkWinning.SetTargetScore(targetScore);
@@ -33,7 +32,7 @@ public class startPanelManager : MonoBehaviour
     }
      private void SetDifficulty()
     {
-        int selectedDifficulty = difficultyDropdown.value; 
-        difficultyManager.SetCurrentDifficulty(selectedDifficulty); 
+        int selectedDifficulty = difficultyDropdown.value;
+        difficultyManager.SetCurrentDifficulty(selectedDifficulty);
     }
 }
