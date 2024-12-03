@@ -4,11 +4,11 @@ public class AsteroidExplosion : MonoBehaviour
 {
     [SerializeField] private GameObject smallerAsteroidPrefab; // פריפאב של אסטרואיד קטן
     [SerializeField] private int numberOfSmallerAsteroids = 3; // מספר האסטרואידים שייצאו
-    [Tooltip("The minimum screen size that the asteroid passes until it explodes")][Range(0, 100)][SerializeField] private float MinExplosionPointYInInPercent = 25f; // נקודת הפיצוץ
-    [Tooltip("The maximum screen size that the asteroid passes until it explodes")][Range(0, 100)][SerializeField] private float MaxExplosionPointYInInPercent = 75f; // נקודת הפיצוץ
+    [Tooltip("The minimum screen size that the asteroid passes until it explodes")] [Range(0, 100)] [SerializeField] private float MinExplosionPointYInInPercent = 25f; // נקודת הפיצוץ
+    [Tooltip("The maximum screen size that the asteroid passes until it explodes")] [Range(0, 100)] [SerializeField] private float MaxExplosionPointYInInPercent = 75f; // נקודת הפיצוץ
 
     private float explosionPointY;
-    private void Start() 
+    private void Start()
     {
         /*
         הסבר קצר על מה שקורה פה
