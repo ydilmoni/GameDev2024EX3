@@ -2757,7 +2757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757d9997fa389694bb38fbc366e3ab91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerStartWith: 3
+  PlayerStartWith: 200
   PlayerCurrentHealth: 0
   healthText: {fileID: 2115155636}
   gameOverPanel: {fileID: 1817319182}
