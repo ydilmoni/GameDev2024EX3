@@ -48,7 +48,8 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void DecreaseHealth (int damage){
+    public void DecreaseHealth(int damage)
+    {
         PlayerCurrentHealth -= damage;
         UpdateHealthUI();
 
@@ -58,26 +59,29 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void AddHealth(int amountToAdd){
+    public void AddHealth(int amountToAdd)
+    {
         PlayerCurrentHealth += amountToAdd;
         UpdateHealthUI();
     }
-    
+
     public void extermination()
     {
         DecreaseHealth(PlayerCurrentHealth);
     }
 
-    public void AddOne (){
+    public void AddOne()
+    {
         AddHealth(1);
     }
-    public void DecreaseOne(){
+    public void DecreaseOne()
+    {
         DecreaseHealth(1);
     }
 
     void UpdateHealthUI()
     {
-        healthText.text =  PlayerCurrentHealth.ToString();
+        healthText.text = PlayerCurrentHealth.ToString();
     }
 
     void GameOver()
@@ -90,6 +94,6 @@ public class HealthManager : MonoBehaviour
     {
         // הטענה מחדש של הסצנה
         SceneManager.LoadScene(sceneName);
-         Time.timeScale = 1f;
+        Time.timeScale = 1f;
     }
 }

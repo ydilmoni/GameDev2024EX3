@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class RandomMover : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f; 
-    [SerializeField] private float minAngle = 200f; 
-    [SerializeField] private float maxAngle = 340f; 
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float minAngle = 200f;
+    [SerializeField] private float maxAngle = 340f;
 
     private Vector2 direction;
 
