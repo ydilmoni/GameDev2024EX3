@@ -5,9 +5,9 @@ using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
-    
+
     public int PlayerStartWith = 3;
-    
+
 
     public int PlayerCurrentHealth;
     public TextMeshProUGUI healthText;
@@ -35,7 +35,7 @@ public class HealthManager : MonoBehaviour
             DecreaseOne();
             Destroy(collision.gameObject);
         }
-        else if(collision.CompareTag(healthTag))
+        else if (collision.CompareTag(healthTag))
         {
             AddOne();
             Destroy(collision.gameObject);

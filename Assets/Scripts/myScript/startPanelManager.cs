@@ -30,7 +30,7 @@ public class startPanelManager : MonoBehaviour
             Time.timeScale = 1;
         }
     }
-     private void SetDifficulty()
+    private void SetDifficulty()
     {
         int selectedDifficulty = difficultyDropdown.value;
         difficultyManager.SetCurrentDifficulty(selectedDifficulty);

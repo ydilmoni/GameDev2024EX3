@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GotoNextLevel : MonoBehaviour 
+public class GotoNextLevel : MonoBehaviour
 {
     [SerializeField] string triggeringTag;
     [SerializeField] [Tooltip("Name of scene to move to when triggering the given tag")] string sceneName;
